@@ -21,8 +21,8 @@ services:
     image: crud-php
     restart: always
     tty: true
-#    volumes:
-#      - ../${API_DIR:-api}:/var/www/api
+    volumes:
+      - .:/var/www/crud
     extra_hosts:
       - 'host.docker.internal:host-gateway'
     networks:
